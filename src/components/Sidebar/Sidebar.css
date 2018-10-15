@@ -1,0 +1,65 @@
+.Sidebar {
+  width: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #f7f7f7;
+}
+
+.Sidebar h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 16px 16px;
+  cursor: pointer;
+}
+
+.Sidebar h1:hover {
+  background-color: #fdfdfd;
+}
+
+.Sidebar .List {
+}
+
+.Sidebar .List .Item {
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.Sidebar .List .Item:hover {
+  background-color: #fdfdfd;
+}
+
+.Sidebar .Method {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  width: 55px;
+  text-overflow: ellipsis;
+}
+
+.Sidebar .Method.GET {
+  color: #64be49;
+}
+
+.Sidebar .Method.POST {
+  color: #365cbe;
+}
+
+.Sidebar .Method.PUT {
+  color: #bab81c;
+}
+
+.Sidebar .Method.PATCH {
+  color: #be6e2d;
+}
+
+.Sidebar .Method.DELETE {
+  color: #be5242;
+}
