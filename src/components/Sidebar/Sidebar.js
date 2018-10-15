@@ -1,5 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
+import '../../global.css'
 import { ListGroup, ListGroupItem } from 'reactstrap'
 
 const items = [
@@ -46,7 +47,7 @@ class Sidebar extends React.Component {
   toggleExpandResource = (resource) => {
     let index = this.state.expanded.findIndex(it => it === resource.name)
 
-    let expanded = [...this.state.expanded]
+    let expanded = [ ...this.state.expanded ]
 
     if (index < 0) {
       expanded.push(resource.name)
@@ -57,11 +58,11 @@ class Sidebar extends React.Component {
     this.setState({ expanded })
   }
 
-  renderResource = (resource) => {
+  renderResource = (resource, i) => {
     const isExpanded = this.state.expanded.find(it => it === resource.name)
 
     return (
-      <React.Fragment>
+      <React.Fragment key={ i }>
         <h1 onClick={ () => this.toggleExpandResource(resource) }>{ resource.name }</h1>
         { isExpanded && <List items={ resource.items }/> }
       </React.Fragment>
@@ -79,9 +80,9 @@ class Sidebar extends React.Component {
 
 const List = ({ items }) =>
   <ListGroup className="List">
-    { items.map(item =>
-      <Item method={ item.method }>{ item.text }</Item>)
-    }
+    { items.map((item, i) =>
+      <Item key={ i } method={ item.method }>{ item.text }</Item>
+    ) }
   </ListGroup>
 
 const Item = ({ children, method, selected, onClick }) =>

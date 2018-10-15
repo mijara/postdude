@@ -43,23 +43,3 @@
   width: 55px;
   text-overflow: ellipsis;
 }
-
-.Sidebar .Method.GET {
-  color: #64be49;
-}
-
-.Sidebar .Method.POST {
-  color: #365cbe;
-}
-
-.Sidebar .Method.PUT {
-  color: #bab81c;
-}
-
-.Sidebar .Method.PATCH {
-  color: #be6e2d;
-}
-
-.Sidebar .Method.DELETE {
-  color: #be5242;
-}

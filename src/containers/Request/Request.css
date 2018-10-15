@@ -1,0 +1,37 @@
+.RequestBuilder {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.RequestBuilder .bar {
+  background-color: #fafafa;
+  padding: 16px;
+  height: min-content;
+  width: 100%;
+  border-bottom: 2px #f7f7f7 solid;
+}
+
+.RequestBuilder .body {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.RequestBuilder .body .left {
+  flex: 1;
+  padding: 16px;
+  border-right: 2px #f7f7f7 solid;
+}
+
+.RequestBuilder .body .right {
+  flex: 1;
+  padding: 16px;
+  overflow: scroll;
+}
+
+.RequestBuilder .status {
+  background-color: #fdfdfd;
+  padding: 8px;
+  border-top: 2px #f7f7f7 solid;
+}

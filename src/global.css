@@ -1,0 +1,19 @@
+.Method.GET {
+  color: #64be49;
+}
+
+.Method.POST {
+  color: #365cbe;
+}
+
+.Method.PUT {
+  color: #bab81c;
+}
+
+.Method.PATCH {
+  color: #be6e2d;
+}
+
+.Method.DELETE {
+  color: #be5242;
+}

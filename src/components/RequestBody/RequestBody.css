@@ -1,0 +1,18 @@
+.RequestBody {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.RequestBody .contentType {
+  padding-bottom: 16px;
+}
+
+.RequestBody .editor {
+  flex: 1;
+  resize: none;
+}
+
+.RequestBody .editor:hover {
+  outline: none !important;
+}
